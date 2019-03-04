@@ -1,0 +1,36 @@
+using System;
+
+public class Book : ILibraryItem {
+
+    public string LibraryId { get; set; }
+
+    public string Title { get; set; }
+
+    public string Author { get; set; }
+
+    public int NumberOfPages { get; set; }
+
+    public int LoanPeriodInDays { get; set; } = 21;
+
+    public DateTime BorrowDate { get; set; }
+
+    public string Borrower { get; set; }
+
+
+    public void CheckOut(string borrower){
+        Borrower = borrower;
+        BorrowDate = DateTime.Now;
+    }
+
+    public void CheckIn(){
+        Borrower = "";
+    }
+
+    public DateTime GetDueDate(){
+        return BorrowDate.AddDays(LoanPeriodInDays);
+    }
+
+
+
+
+}
