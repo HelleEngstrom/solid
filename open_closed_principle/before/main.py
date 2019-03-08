@@ -1,7 +1,7 @@
 #Converts applicants to employees
 
-from Applicant import Applicant
-from helper import createEmployee
+from applicant import Applicant
+from employee_processor import createEmployee
 
 def run():
 

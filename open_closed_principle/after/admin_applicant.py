@@ -1,4 +1,4 @@
-from employeeProcessor import createAdminEmployee
+from employee_processor import createAdminEmployee
 
 class AdminApplicant:
     def __init__(self, firstname, lastname):

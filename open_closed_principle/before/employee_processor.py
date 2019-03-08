@@ -1,4 +1,4 @@
-from Employee import Employee
+from employee import Employee
 
 def createEmployee(applicant):
     employee = Employee(

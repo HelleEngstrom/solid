@@ -1,14 +1,12 @@
 #Prompts the user for input and creates a username from it.
 
-from userHelper import captureUserData, createUsername
-from StandardMessages import StandardMessages
-from User import User
+from user_helper import captureUserData, createUsername
+import standard_messages as standardMessages
+from user import User
 from validator import validateUser
 
 
 def run():
-    #setup
-    standardMessages = StandardMessages()
 
     standardMessages.printWelcomeMessage()
 

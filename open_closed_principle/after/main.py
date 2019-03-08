@@ -1,8 +1,8 @@
 #Converts applicants to employees
 
-from Applicant import Applicant
-from AdminApplicant import AdminApplicant
-from SuperuserApplicant import SuperuserApplicant
+from applicant import Applicant
+from admin_applicant import AdminApplicant
+from superuser_applicant import SuperuserApplicant
 
 def run():
 
@@ -16,7 +16,7 @@ def run():
 
     for i in range(0, len(applicants)):
         employees.append(applicants[i].createEmployee())
-    
+
     for i in range(0, len(employees)):
         print(employees[i].firstname, employees[i].lastname, employees[i].username)
 

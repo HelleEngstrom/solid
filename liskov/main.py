@@ -1,5 +1,5 @@
-from Rectangle import Rectangle
-from Square import Square
+from rectangle import Rectangle
+from square import Square
 
 def run():
     rec = Rectangle(2, 4)

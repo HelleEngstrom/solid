@@ -1,4 +1,4 @@
-from employeeProcessor import createSuperUserEmployee
+from employee_processor import createSuperUserEmployee
 
 class SuperuserApplicant:
     def __init__(self, firstname, lastname):
