@@ -12,9 +12,9 @@ public class ReferenceBook : ILibraryItem {
 
     public int LoanPeriodInDays { get; set; } = 0;
 
-    public DateTime BorrowDate { get; set; }
+    public DateTime BorrowDate { get; set; }//är inte relevant
 
-    public string Borrower { get; set; }
+    public string Borrower { get; set; }//är inte relevant
 
 
     public void CheckOut(string borrower){

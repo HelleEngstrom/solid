@@ -7,7 +7,7 @@ def run():
 
     applicants = [
         Applicant("Pippi", "Långstrump"),
-        Applicant("Harry", "Potter"),
+        Applicant("Harry", "Potter", True),
         Applicant("Uncle", "Bob")
         ]
 
@@ -17,7 +17,7 @@ def run():
         employees.append(createEmployee(applicants[i]))
 
     for i in range(0, len(employees)):
-        print(employees[i].firstname, employees[i].lastname, employees[i].username)
+        print("Förnamn: " + employees[i].firstname, "Efternamn: " + employees[i].lastname, "Användarnamn: " + employees[i].username)
 
 
 if __name__ == "__main__":

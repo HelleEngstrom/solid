@@ -2,14 +2,15 @@
 
 from applicant import Applicant
 from admin_applicant import AdminApplicant
-from superuser_applicant import SuperuserApplicant
+from superUser_applicant import SuperUserApplicant
+
 
 def run():
 
     applicants = [
         Applicant("Pippi", "Långstrump"),
         AdminApplicant("Harry", "Potter"),
-        SuperuserApplicant("Uncle", "Bob")
+        SuperUserApplicant("Uncle", "Bob")
         ]
 
     employees = []
@@ -17,8 +18,13 @@ def run():
     for i in range(0, len(applicants)):
         employees.append(applicants[i].createEmployee())
 
+#TODO: snygga till outputen
     for i in range(0, len(employees)):
-        print(employees[i].firstname, employees[i].lastname, employees[i].username)
+        print("Förnamn: " + employees[i].firstname,
+              "Efternamn: " + employees[i].lastname,
+              "Användarnamn: " + employees[i].username,
+              "isAdmin: " + str(employees[i].isAdmin),
+)
 
 
 if __name__ == "__main__":

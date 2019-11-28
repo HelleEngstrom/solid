@@ -16,9 +16,9 @@ public class DVD : ILibraryItem {
 
     public string Borrower { get; set; }
 
-    public int RunTimeInMinutes { get; set; }
+    public int RunTimeInMinutes { get; set; } //Inte i interfacet
 
-    public string[] Actors { get; set; }
+    public string[] Actors { get; set; } //Inte i interfacet
 
 
     public void CheckOut(string borrower){

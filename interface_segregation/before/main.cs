@@ -10,7 +10,7 @@ class HelloWorld {
         };
 
         ILibraryItem audioBook =  new AudioBook {
-            Title = "Harry Potter and the Order fo the Phoenix"
+            Title = "Harry Potter and the Order of the Phoenix"
         };
 
         ILibraryItem dvd =  new DVD {
